@@ -1,0 +1,19 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "olivier.amacker@netplus.ch",
+                "Name": "MadeInShineA"
+            }
+        ],
+        "Category": "Language",
+        "Description": "A widget to learn daily kanji",
+        "Icon": "battery",
+        "Id": "com.github.madeinshinea.dailykanji",
+        "Name": "Daily Kanji",
+        "Version": "1",
+        "Website": "https://github.com/MadeInShineA/daily-kanji-plasma-widget"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "KPackageStructure": "Plasma/Applet"
+}
