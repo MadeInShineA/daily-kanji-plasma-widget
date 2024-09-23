@@ -12,6 +12,5 @@ RowLayout {
   }
   Button {
     text: root.buttontext
-    onClicked: root.someInt += 1
+    onClicked: root.someInt += 2 }
   }
-}

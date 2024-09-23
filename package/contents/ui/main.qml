@@ -5,11 +5,12 @@ import QtQuick.Layouts
 
 PlasmoidItem {
   id: root
-  preferredRepresentation: compactRepresentation
+  preferredRepresentation: fullRepresentation
   compactRepresentation: CompactItem {}
   fullRepresentation: FullItem{}
 
   property int someInt: 69
-  property string buttontext: "Click me!"  
+  property string buttontext: "Click Me!"
 }
+
 
