@@ -9,8 +9,6 @@ PlasmoidItem {
   compactRepresentation: CompactItem {}
   fullRepresentation: FullItem{}
 
-  property int someInt: 69
-  property string buttontext: "Click Me!"
 }
 
 
