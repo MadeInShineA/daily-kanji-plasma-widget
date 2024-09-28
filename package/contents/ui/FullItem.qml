@@ -11,7 +11,7 @@ RowLayout {
   QtObject {
     id: apiHandler
 
-    function fetchDailyKanji(kanji, successCallback, errorCallback) {
+    function fetchKanjiInfos(kanji, successCallback, errorCallback) {
       let xhr = new XMLHttpRequest();
       xhr.open("GET", "https://kanjiapi.dev/v1/kanji/" + kanji, true); 
       xhr.onreadystatechange = function() {
@@ -43,7 +43,7 @@ RowLayout {
   PlasmaComponents.Button {
     text: "Load New Kanji"
     onClicked: {
-      apiHandler.fetchDailyKanji(
+      apiHandler.fetchKanjiInfos(
         "㒵",
         function(response) {
           let kanjiData = JSON.parse(response);
@@ -60,7 +60,7 @@ RowLayout {
   }
 
   Component.onCompleted: {
-    apiHandler.fetchDailyKanji(
+    apiHandler.fetchKanjiInfos(
       "水",
       function(response) {
         let kanjiData = JSON.parse(response);
