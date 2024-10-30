@@ -1,0 +1,35 @@
+<kanjiSets>
+    <entry name="joyo_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="jinmeiyo_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="heisig_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="kyouiku_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="grade_1_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="grade_2_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="grade_3_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="grade_4_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="grade_5_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="grade_6_kanji" type="Bool">
+        <default>true</default>
+    </entry>
+    <entry name="joyo_excluding_kyouiku" type="Bool">
+        <default>true</default>
+    </entry>
+</kanjiSets>
