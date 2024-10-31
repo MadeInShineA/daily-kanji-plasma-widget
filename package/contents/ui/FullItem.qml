@@ -80,16 +80,17 @@ RowLayout {
             if (available_kanji.length > 0) {
                 let randomKanjiSet = available_kanji[Math.floor(Math.random() * available_kanji.length)];
                 let randomKanji = randomKanjiSet[Math.floor(Math.random() * randomKanjiSet.length)];
-                console.log(randomKanji);
 
                 fetchKanjiInfos(
                     randomKanji,
                     function(response) {
                         let kanjiData = response;
-                        kanjiLabel.text = kanjiData.kanji; // Display the kanjiapi
-                        toolTip.mainText = "Reading: " + kanjiData.kun_readings.join(", ") +
-                            "\nMeaning: " + kanjiData.meanings.join(", "); // Set hover details
-                    },
+                        kanjiLabel.text = kanjiData.kanji;
+                        toolTip.mainText = 
+                          "Meaning: " + kanjiData.meanings.join(", ") +
+                          "\nKun Reading: " + kanjiData.kun_readings.join(", ") +
+                          "\nOn Reading: " + kanjiData.on_readings.join(",")
+                                              },
                     function(status, statusText) {
                         console.error("Error:", status, statusText);
                         kanjiLabel.text = "Error loading kanji";
